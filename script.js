@@ -85,6 +85,10 @@ equalBt.addEventListener('click',()=>{
         let operation = [];
         let result=0;
         operation = getOperation(displayValue);
+        if(operation[0]==="/" && operation[2]==="0"){
+            solution="cero";
+            break;
+        }
         result=operate(operation[0],operation[1],operation[2]);
         result=Math.round(result*10)/10;
         displayValue=displayValue.slice(operation[3]);
@@ -93,9 +97,11 @@ equalBt.addEventListener('click',()=>{
             solution=result;
         }
     }
-    if(!solution){
-        displayValue="Error";
-        solutionDisplay.textContent=displayValue;
+    if(solution==="cero"){
+        solutionDisplay.textContent="Dameeeee!"
+    }
+    else if(!solution){
+        solutionDisplay.textContent="Error";
     }else{
         solutionDisplay.textContent=solution;
     }
