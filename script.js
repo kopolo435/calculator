@@ -35,6 +35,27 @@ function updateDisplay(digitBtn){
     calcuDisplay.textContent+=digitBtn.textContent;
     displayValue=calcuDisplay.textContent;
 }
+
+
+function getOperation(equation){
+    let num1,num2,operator;
+    let i=0;
+    for(i;i<equation.length;i++){
+        if("+-*/".indexOf(equation[i])>-1){
+            break;
+        }
+        num1+=equation[i];
+    }
+    operator=equation[i];
+    i++;
+    for(i;i<equation.length;i++){
+        if("+-*/".indexOf(equation[i])>-1){
+            break;
+        }
+        num2+=equation[i];
+    }
+    return [operator,num1,num2];
+}
 const calcuDisplay=document.querySelector(".display");
 const equalBt=document.querySelector("#equal");
 const clearBtn=document.querySelector("#clear");
@@ -56,5 +77,8 @@ clearBtn.addEventListener('click',()=>{
     displayValue="";
 });
 
+equalBt.addEventListener('click',()=>{
+    
+});
 
 
