@@ -82,8 +82,14 @@ equalBt.addEventListener('click',()=>{
     let result=operate(operation[0],operation[1],operation[2]);
     displayValue=displayValue.slice(operation[3]);
     console.log(operation);
-    displayValue=result+displayValue;
-    calcuDisplay.textContent=displayValue;
+    if(!result){
+        displayValue="Error";
+        calcuDisplay.textContent=displayValue;
+    }else{
+        displayValue=result+displayValue;
+        calcuDisplay.textContent=displayValue;
+    }
+
 
 });
 
