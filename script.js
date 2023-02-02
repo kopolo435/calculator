@@ -50,6 +50,11 @@ operatorBtns.forEach(operatorbtn => operatorbtn.addEventListener("click", functi
 digitBtns.forEach(digitBtn => digitBtn.addEventListener("click",function() {
     updateDisplay(digitBtn)}));
 
+//limpiea display
+clearBtn.addEventListener('click',()=>{
+    calcuDisplay.textContent="";
+    displayValue="";
+});
 
 
 
