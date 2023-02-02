@@ -38,7 +38,7 @@ function updateDisplay(digitBtn){
 
 
 function getOperation(equation){
-    let num1,num2,operator;
+    let num1="",num2="",operator;
     let i=0;
     for(i;i<equation.length;i++){
         if("+-*/".indexOf(equation[i])>-1){
@@ -80,8 +80,9 @@ clearBtn.addEventListener('click',()=>{
 equalBt.addEventListener('click',()=>{
     let operation = getOperation(displayValue);
     let result=operate(operation[0],operation[1],operation[2]);
-    displayValue=displayValue.slice(operation[3]-1);
-    
+    displayValue=displayValue.slice(operation[3]);
+    console.log(operation);
+    console.log(displayValue);
 
 });
 
