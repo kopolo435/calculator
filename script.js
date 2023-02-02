@@ -54,7 +54,7 @@ function getOperation(equation){
         }
         num2+=equation[i];
     }
-    return [operator,num1,num2];
+    return [operator,num1,num2,i];
 }
 const calcuDisplay=document.querySelector(".display");
 const equalBt=document.querySelector("#equal");
@@ -78,7 +78,11 @@ clearBtn.addEventListener('click',()=>{
 });
 
 equalBt.addEventListener('click',()=>{
+    let operation = getOperation(displayValue);
+    let result=operate(operation[0],operation[1],operation[2]);
+    displayValue=displayValue.slice(operation[3]-1);
     
+
 });
 
 
