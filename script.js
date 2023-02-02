@@ -108,5 +108,8 @@ equalBt.addEventListener('click',()=>{
     }
 });
 
-
+backspaceBtn.addEventListener("click",()=>{ //elimina ultimo caracter
+    calcuDisplay.textContent=calcuDisplay.textContent.slice(0,length-1);
+    displayValue=calcuDisplay.textContent;
+})
 
