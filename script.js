@@ -60,6 +60,7 @@ const calcuDisplay=document.querySelector(".display");
 const solutionDisplay=document.querySelector(".solution");
 const equalBt=document.querySelector("#equal");
 const clearBtn=document.querySelector("#clear");
+const backspaceBtn=document.querySelector("#backspace");
 
 let displayValue;
 
@@ -105,8 +106,7 @@ equalBt.addEventListener('click',()=>{
     }else{
         solutionDisplay.textContent=solution;
     }
-
-
 });
+
 
 
