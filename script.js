@@ -87,7 +87,7 @@ equalBt.addEventListener('click',()=>{
         operation = getOperation(displayValue);
         result=operate(operation[0],operation[1],operation[2]);
         displayValue=displayValue.slice(operation[3]);
-        if(result){
+        if(result){ //verifica que si exista un resultado, cuando no lo hay entonces displayvalue sera ""
             displayValue=result+displayValue;
             solution=result;
         }
