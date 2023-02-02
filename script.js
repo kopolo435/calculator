@@ -57,6 +57,7 @@ function getOperation(equation){
     return [operator,num1,num2,i];
 }
 const calcuDisplay=document.querySelector(".display");
+const solutionDisplay=document.querySelector(".solution");
 const equalBt=document.querySelector("#equal");
 const clearBtn=document.querySelector("#clear");
 
@@ -75,19 +76,27 @@ digitBtns.forEach(digitBtn => digitBtn.addEventListener("click",function() {
 clearBtn.addEventListener('click',()=>{
     calcuDisplay.textContent="";
     displayValue="";
+    solutionDisplay.textContent="";
 });
 
 equalBt.addEventListener('click',()=>{
-    let operation = getOperation(displayValue);
-    let result=operate(operation[0],operation[1],operation[2]);
-    displayValue=displayValue.slice(operation[3]);
-    console.log(operation);
-    if(!result){
+    let solution=0;
+    while(displayValue.length>0){
+        let operation = [];
+        let result=0;
+        operation = getOperation(displayValue);
+        result=operate(operation[0],operation[1],operation[2]);
+        displayValue=displayValue.slice(operation[3]);
+        if(result){
+            displayValue=result+displayValue;
+            solution=result;
+        }
+    }
+    if(!solution){
         displayValue="Error";
-        calcuDisplay.textContent=displayValue;
+        solutionDisplay.textContent=displayValue;
     }else{
-        displayValue=result+displayValue;
-        calcuDisplay.textContent=displayValue;
+        solutionDisplay.textContent=solution;
     }
 
 
