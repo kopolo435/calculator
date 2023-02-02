@@ -86,6 +86,7 @@ equalBt.addEventListener('click',()=>{
         let result=0;
         operation = getOperation(displayValue);
         result=operate(operation[0],operation[1],operation[2]);
+        result=Math.round(result*10)/10;
         displayValue=displayValue.slice(operation[3]);
         if(result){ //verifica que si exista un resultado, cuando no lo hay entonces displayvalue sera ""
             displayValue=result+displayValue;
