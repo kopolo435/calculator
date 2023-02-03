@@ -15,7 +15,7 @@ main{
 .calculatorContainer{
     display: flex;
     flex-direction: column;
-    width: 30%;
+    width: 40%;
     height: 70%;
 }
 
@@ -26,6 +26,7 @@ main{
     display: flex;
     flex-direction: column;
     padding: 0.2em 0.4em;
+    box-sizing: border-box;
 }
 
 .display{
