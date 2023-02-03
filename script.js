@@ -61,6 +61,7 @@ const solutionDisplay=document.querySelector(".solution");
 const equalBt=document.querySelector("#equal");
 const clearBtn=document.querySelector("#clear");
 const backspaceBtn=document.querySelector("#backspace");
+const decimalBtn=document.querySelector("#decimalPoint");
 
 let displayValue;
 
@@ -111,5 +112,13 @@ equalBt.addEventListener('click',()=>{
 backspaceBtn.addEventListener("click",()=>{ //elimina ultimo caracter
     calcuDisplay.textContent=calcuDisplay.textContent.slice(0,length-1);
     displayValue=calcuDisplay.textContent;
+    if(!(calcuDisplay.textContent.indexOf(".")>-1)){//si se elimina el . decimal habilita el boton
+        decimalBtn.disabled=false;
+    }
+})
+
+decimalBtn.addEventListener("click",()=>{
+    updateDisplay(decimalBtn);
+    decimalBtn.disabled=true;
 })
 
