@@ -49,3 +49,10 @@ main{
     display: flex;
     flex-direction: row-reverse;
 }
+
+.digits{
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
