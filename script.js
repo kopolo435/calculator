@@ -132,6 +132,7 @@ window.addEventListener('keydown',e=>{
         }
         else if(buttonEle===equalBt)equalBt.click();//dispara evento de hacer click en equal
         else if(buttonEle===backspaceBtn)backspaceBtn.click();//dispara evento de hacer click en backspace
+        else if(buttonEle===clearBtn)clearBtn.click();
         else updateDisplay(buttonEle);
     }
 });
