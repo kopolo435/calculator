@@ -79,6 +79,9 @@ clearBtn.addEventListener('click',()=>{
     calcuDisplay.textContent="";
     displayValue="";
     solutionDisplay.textContent="";
+    if(!(calcuDisplay.textContent.indexOf(".")>-1)){//Habilita el boton
+        decimalBtn.disabled=false;
+    }
 });
 
 equalBt.addEventListener('click',()=>{
