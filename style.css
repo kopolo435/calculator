@@ -56,3 +56,7 @@ main{
     flex-wrap: wrap;
     align-items: flex-start;
 }
+
+.digitBtn{
+    width: 33%;
+}
