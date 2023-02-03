@@ -122,3 +122,16 @@ decimalBtn.addEventListener("click",()=>{
     decimalBtn.disabled=true;
 })
 
+window.addEventListener('keydown',e=>{
+    buttonEle=Array.from(document.querySelectorAll('button')).find(btn =>{//consigue el elemento de la tecla presionada
+        return btn.textContent===e.key;//e.key devuelve una string con el texto de la tecla presionada
+    })
+    if(buttonEle){
+        if(buttonEle===decimalBtn){
+            if(!(calcuDisplay.textContent.indexOf(".")>-1))updateDisplay(buttonEle);
+        }
+        else if(buttonEle===equalBt)equalBt.click();//dispara evento de hacer click en equal
+        else if(buttonEle===backspaceBtn)backspaceBtn.click();//dispara evento de hacer click en backspace
+        else updateDisplay(buttonEle);
+    }
+});
