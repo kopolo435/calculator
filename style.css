@@ -25,12 +25,12 @@ main{
     height: 25%;
     display: flex;
     flex-direction: column;
+    padding: 0.2em;
 }
 
 .display{
     height: 45%;
     font-size: 2.5em;
-    padding: 0.2em;
 }
 
 .solution{
