@@ -54,7 +54,7 @@ main{
     width: 70%;
     display: flex;
     flex-wrap: wrap;
-    align-items: flex-start;
+    
 }
 
 .digitBtn{
