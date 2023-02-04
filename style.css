@@ -71,8 +71,7 @@ main{
 .digits{
     width: 70%;
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row-reverse;
+    flex-direction: column;
 }
 
 .digitBtn{
