@@ -79,6 +79,11 @@ main{
     flex-direction: row-reverse;
 }
 
+#backRow{
+    flex-direction: row;
+    flex-wrap:wrap;
+}
+
 .digitBtn{
     width: 30%;
     font-size: 3em;
