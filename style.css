@@ -15,7 +15,7 @@ main{
 .calculatorContainer{
     display: flex;
     flex-direction: column;
-    width: 40%;
+    width: 60%;
     height: 70%;
     border: 5px solid black;
     background-color: black;
@@ -76,8 +76,9 @@ main{
 }
 
 .digitBtn{
-    width: 33%;
+    width: 30%;
     font-size: 3em;
+    margin: 0.08em;
 }
 
 .operators{
@@ -87,17 +88,18 @@ main{
 }
 
 .operatorBtn,.calcuBtn{
-    width: 50%;
+    width: 40%;
+    margin: 0.3em;
 }
 
 #decimalPoint{
-    width: 27%;
+    width: 30%;
 }
 
 #backspace{
-    width: 39%;
+    width: 30%;
 }
 
 #cero{
-    width: 33%;
+    width: 30%;
 }
