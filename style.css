@@ -89,7 +89,6 @@ main{
 }
 
 .operators{
-    width: 30%;
     display: flex;
     flex-wrap: wrap;
 }
