@@ -85,7 +85,7 @@ main{
 }
 
 .digitBtn{
-    width: 30%;
+    width: 32%;
     font-size: 3em;
     margin: 0.08em;
 }
@@ -110,5 +110,5 @@ main{
 }
 
 #cero{
-    width: 30%;
+    width: 32%;
 }
