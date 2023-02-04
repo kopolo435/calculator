@@ -37,6 +37,14 @@ main{
 .display{
     height: 45%;
     font-size: 2.5em;
+    overflow: scroll;
+}
+.display::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+
+.solution::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
 }
 
 .solution{
@@ -79,4 +87,16 @@ main{
 
 .operatorBtn,.calcuBtn{
     width: 50%;
+}
+
+#decimalPoint{
+    width: 27%;
+}
+
+#backspace{
+    width: 39%;
+}
+
+#cero{
+    width: 33%;
 }
