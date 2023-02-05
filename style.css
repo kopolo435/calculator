@@ -93,13 +93,22 @@ main{
     flex-direction: column;
 }
 
-.operatorBtn,.calcuBtn{
-    width: 40%;
-    margin: 0.3em;
+.rowOperator{
+    display: flex;
+    flex: 1;
 }
+
+.operatorBtn,.calcuBtn{
+    font-size: 2em;
+    width: 50%;
+    margin: 0.2em;
+}
+
+
 
 #decimalPoint{
     flex: 1 1 30%;
+    margin: 0.3em;
 }
 
 button{
@@ -110,6 +119,7 @@ button{
 #backspace{
     flex: 1 1 31%;
     height: 9.5vh;
+    margin: 0.3em;
 }
 
 #cero{
