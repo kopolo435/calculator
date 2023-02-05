@@ -61,7 +61,7 @@ main{
 .buttonContainer{
     height: 75%;
     width: 100%;
-    background-color: #faebd7;
+    background-color:whitesmoke;
     display: flex;
     flex-direction: row-reverse;
     padding: 0.5em;
