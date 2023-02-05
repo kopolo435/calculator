@@ -90,7 +90,7 @@ main{
 
 .operators{
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
 }
 
 .operatorBtn,.calcuBtn{
